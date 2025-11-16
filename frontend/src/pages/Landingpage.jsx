@@ -1,4 +1,5 @@
 // Landing page component
+import { Link } from 'react-router-dom';
 
 function Landingpage() {
   return (
@@ -8,18 +9,18 @@ function Landingpage() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="text-white text-2xl font-bold">🔒 Digital Death Locker</div>
           <div className="space-x-4">
-            <a
-              href="#login"
+            <Link
+              to="/login"
               className="text-white hover:text-gray-200 font-medium"
             >
               Login
-            </a>
-            <a
-              href="#signup"
+            </Link>
+            <Link
+              to="/signup"
               className="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition"
             >
               Sign Up
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -32,12 +33,12 @@ function Landingpage() {
         <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
           Protect and pass on your important digital assets, passwords, and instructions to your loved ones when the time comes.
         </p>
-        <a
-          href="#signup"
+        <Link
+          to="/signup"
           className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition inline-block"
         >
           Get Started Free
-        </a>
+        </Link>
       </div>
 
       {/* Features Section */}
@@ -116,12 +117,12 @@ function Landingpage() {
           <p className="text-lg mb-8">
             Join thousands who trust us with their digital inheritance
           </p>
-          <a
-            href="#signup"
+          <Link
+            to="/signup"
             className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition inline-block"
           >
             Create Free Account
-          </a>
+          </Link>
         </div>
       </div>
 
